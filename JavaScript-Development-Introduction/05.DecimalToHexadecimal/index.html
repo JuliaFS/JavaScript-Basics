@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Decimal to Hexadecimal</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Development Introduction</h1>
+        <h2>5.Write a JavaScript code in a Web page dec2hex.html that enters a positive integer number
+            num and converts and converts it to a hexadecimal form. The input should be entered as JavaScript prompt window.
+            The output should be shown as browser popup window (alert).
+        </h2>
+    </header>
+    <div id="navigation">
+        <a href="../04.CircleArea/index.html">Previous task</a>
+        <a href="../01.HomeTown/index.html">Next task</a>
+    </div>
+    <script>
+        var decimal = Number( prompt('Enter a number', 254));
+        var hexaDecimal = decimal.toString(16).toUpperCase();
+        alert(hexaDecimal);
+    </script>
+</body>
+</html>
