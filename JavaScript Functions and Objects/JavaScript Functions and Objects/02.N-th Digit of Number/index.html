@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Last Digit of Number</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Functions and Objects</h1>
+        <p>2.Write a JavaScript function findNthDigit(arr) that accepts as a parameter an array of two numbers num and n and returns
+            the n-th digit of given decimal number num counted from right to left. Return undefined when the number does not have n-th digit.
+            Write a JS program nthDigitOfNumber.js that invokes your function with the sample input data below and prints the output at the console
+        </p>
+        <p> Examples:
+            <span>input: [1, 6]      output: 6</span>
+            <span>input: [2, -55]	output: 5</span>
+            <span>input: [6, 923456]	output: 9</span>
+            <span>input: [3, 1451.78]	output: 1</span>
+            <span>input: [6, 888.88]	output: The number doesn’t have 6 digits</span>
+        </p>
+    </header>
+    <div>
+        <label for="row-arr">Enter numbers, separeted by ", " (e.g. 1, 6):</label>
+        <input type="text" name="text" id="row-arr" />
+    </div>
+    <div>
+        <label for="check">Output: </label>
+        <input type="button" name="check" id="check" value="Check!" onclick="findNthDigit()" />
+    </div>
+    <div id="result"></div>
+    <div id="navigation">
+        <a href="../01.Last Digit of Number/index.html">Previous task</a>
+        <a href="../03.Number with Largest Sum of Digits/index.html">Next task</a>
+    </div>
+    <script type="text/javascript" src="nthDigitOfNumber.js"></script>
+</body>
+</html>

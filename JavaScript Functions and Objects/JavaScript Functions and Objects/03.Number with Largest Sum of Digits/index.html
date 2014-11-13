@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Number with Largest Sum of Digits</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Functions and Objects</h1>
+        <p>3.Write a JavaScript function findLargestBySumOfDigits(arr) that accepts as a parameter an array of numbers
+            or/and strings and returns the element with the largest sum of its digits. The function should take a variable number of arguments.
+            It should return undefined when 0 arguments are passed or when some of the arguments is not an integer number.
+            Write a JS program largestSumOfDigits.js that invokes your function with the sample input data below and prints its output at the console.
+        </p>
+        <p> Examples:
+            <span>input: [5, 10, 15, 111]     output: 15</span>
+            <span>input: [33, 44, -99, 0, 20]	output: -99</span>
+            <span>input: ['hello']	output: undefined</span>
+            <span>input: [5, 3.3]	output: undefined</span>
+        </p>
+    </header>
+    <div>
+        <label for="row-arr">Enter numbers, separeted by ", " (e.g. 1, 6):</label>
+        <input type="text" name="text" id="row-arr" />
+    </div>
+    <div>
+        <label for="check">Output: </label>
+        <input type="button" name="check" id="check" value="Check!" onclick="findLargestBySumOfDigits()" />
+    </div>
+    <div id="result"></div>
+    <div id="navigation">
+        <a href="../02.N-th Digit of Number/index.html">Previous task</a>
+        <a href="../04.Bigger Than Neighbors/index.html">Next task</a>
+    </div>
+    <script type="text/javascript" src="largestSumOfDigits.js"></script>
+</body>
+</html>
