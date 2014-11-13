@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Powerful Car</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Syntax</h1>
+        <p>1.Write a JavaScript function convertKWtoHP(number) that accepts number variable to convert car’s kW into hp (horse power).
+            Write a JS program powerfulCars.js that converts a few sample values to hp (see the examples below).
+            The result should be printed on the console, rounded up to the second sign after the decimal point. Run the program through Node.js
+            Examples:
+            <span>input: 75 output: 100.58</span>
+            <span>input: 150 output: 201.15</span>
+            <span>input: 1000 output:1341.02</span>
+        </p>
+    </header>
+    <div>
+        <label for="carskw">Enter car’s kW:</label>
+        <input type="text" name="text" id="carskw" />
+    </div>
+    <div>
+        <label for="check">hp(horse power): </label>
+        <input type="button" name="check" id="check" value="Check!" onclick="convertKWtoHP()" />
+    </div>
+    <div id="result"></div>
+    <div id="navigation">
+        <a href="../12.Variables/index.html">Previous task</a>
+        <a href="../02.Simple Calculations/index.html">Next task</a>
+    </div>
+    <script type="text/javascript" src="powerfulCars.js"></script>
+</body>
+</html>

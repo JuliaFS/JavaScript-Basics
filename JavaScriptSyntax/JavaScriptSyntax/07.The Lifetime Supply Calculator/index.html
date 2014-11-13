@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>The Lifetime Supply Calculator</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Syntax</h1>
+        <p>7.Write a JavaScript function calcSupply(age, maxAge, food, foodPerDay) that accepts the following parameters:
+            your age (years), your maximum age (years), your favorite food name (e.g. "chocolate"),
+            estimate amount of your favorite food per day (a number). The function calculates how many of the food you will eat for the rest of your life.
+            Write JS program lifetimeSupplyCalc.js that calculates the amount of a few foods that you will eat. The result should be printed on the console.
+            Run the program through Node.js. Note: we assume that there are no leap years. <hr>Examples:
+            <hr>
+            38
+            118
+            chocolate
+            0.5
+            14600kg of chocolate would be enough until I am 118 years old.
+            <hr>
+            20
+            87
+            fruits
+            2
+            48910kg of fruits would be enough until I am 87 years old.
+            <hr>
+            16
+            102
+            nuts
+            1.1	34529kg of nuts would be enough until I am 102 years old.
+
+        </p>
+    </header>
+    <div>
+        <label for="age">Enter your age:</label>
+        <input type="text" name="text" id="age" />
+    </div>
+    <div>
+        <label for="max-age">Enter your maximum age:</label>
+        <input type="text" name="text" id="max-age" />
+    </div>
+    <div>
+        <label for="food">Enter type of food:</label>
+        <input type="text" name="text" id="food" />
+    </div>
+    <div>
+        <label for="all-food">Enter amount for food per day:</label>
+        <input type="text" name="text" id="all-food" />
+    </div>
+    <div>
+        <label for="check">Needed food? </label>
+        <input type="button" name="check" id="check" value="Check!" onclick="calcSupply()" />
+    </div>
+    <div id="result"></div>
+    <div id="navigation">
+        <a href="../06.Bit Checker/index.html">Previous task</a>
+        <a href="../08.Cylinder Volume/index.html">Next task</a>
+    </div>
+    <script type="text/javascript" src="lifetimeSupplyCalc.js"></script>
+</body>
+</html>

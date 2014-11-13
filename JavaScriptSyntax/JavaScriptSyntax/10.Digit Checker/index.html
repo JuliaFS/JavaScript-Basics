@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Digit Checker</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Syntax</h1>
+        <p>10.Write a JavaScript function checkDigit(number) that finds if the third digit (right-to-left) of an integer number n (n>1000) is 3.
+            Write JS program digitChecker.js that checks a few numbers. The result (true or false) should be printed on the console. Run the program through Node.js.
+            <span>Examples:</span>
+            <span>input: 1235 output: false</span>
+            <span>input: 25368 output: true</span>
+            <span>input: 123456	output: false</span>
+        </p>
+    </header>
+    <div>
+        <label for="number">Enter an integer number (n>1000):</label>
+        <input type="text" name="text" id="number" />
+    </div>
+    <div>
+        <label for="check">Is the third digit 3? </label>
+        <input type="button" name="check" id="check" value="Check!" onclick="checkDigit()" />
+    </div>
+    <div id="result"></div>
+    <div id="navigation">
+        <a href="../09.Tree or House/index.html">Previous task</a>
+        <a href="../11.Digit as Word/index.html">Next task</a>
+    </div>
+    <script type="text/javascript" src="digitChecker.js"></script>
+</body>
+</html>

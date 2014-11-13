@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Cylinder Volume</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Syntax</h1>
+        <p>8.Write a JavaScript function calcCylinderVol(arr) that accepts the following parameters: radius and the height of a straight circular cylinder.
+            The function calculates the volume of the cylinder. Write JS program cylinderVol.js that calculates the volume of a few cylinders.
+            The result should be printed on the console. Run the program through Node.js.
+            <span>Examples:</span>
+            <span>input: [2, 4]	output: 50.265</span>
+            <span>input: [5, 8]	output: 628.319</span>
+            <span>input: [12, 3] output: 1357.168</span>
+        </p>
+    </header>
+    <div>
+        <label for="values">Enter radius and height for cylinder separated by ", ":</label>
+        <input type="text" name="text" id="values" />
+    </div>
+    <div>
+        <label for="check">Cylinder Volume?</label>
+        <input type="button" name="check" id="check" value="Check!" onclick="calcCylinderVol()" />
+    </div>
+    <div id="result"></div>
+    <div id="navigation">
+        <a href="../07.The Lifetime Supply Calculator/index.html">Previous task</a>
+        <a href="../09.Tree or House/index.html">Next task</a>
+    </div>
+    <script type="text/javascript" src="cylinderVol.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tree or House</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Syntax</h1>
+        <p>9.Write a JavaScript function treeHouseCompare(arr) that accepts the following parameters:
+            integers a and b. The function compares the area of the house and the area of the tree (Figure 1)
+            and returns the name of the figure with bigger area (house or tree) and the value of the area.
+            Write JS program treehouse.js that compares a few houses and trees. The result should be printed
+            on the console. Run the program through Node.js.
+            <span>Examples:</span>
+            <span>input: [3, 2] output: house/12.00</span>
+            <span>input: [3, 3]	output: tree/15.57</span>
+            <span>input: [4, 5]	output: tree/43.24</span>
+
+        </p>
+    </header>
+    <div>
+        <label for="values">Enter numbers A and B separated by ", ":</label>
+        <input type="text" name="text" id="values" />
+    </div>
+    <div>
+        <label for="check">Tree or House?</label>
+        <input type="button" name="check" id="check" value="Check!" onclick="treeHouseCompare()" />
+    </div>
+    <div id="result"></div>
+    <div id="navigation">
+        <a href="../08.Cylinder Volume/index.html">Previous task</a>
+        <a href="../10.Digit Checker/index.html">Next task</a>
+    </div>
+    <script type="text/javascript" src="treehouse.js"></script>
+</body>
+</html>
