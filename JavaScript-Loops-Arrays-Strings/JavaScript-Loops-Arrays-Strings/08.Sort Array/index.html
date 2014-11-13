@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Sort Array</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<header>
+    <h1>JavaScript Loops, Arrays, Strings</h1>
+    <p>8.Sorting an array means to arrange its elements in increasing order. Write a JavaScript function sortArray(arr) to sort an array.
+        Use the "selection sort" algorithm: find the smallest element, move it at the first position, find the smallest from the rest, move it at the second position, etc.
+        Write JS program arraySorter.js that invokes your function with the sample input data below and prints the output at the console
+    </p>
+    <p> Examples:
+        <span>input: [5, 4, 3, 2, 1]    output: 1, 2, 3, 4, 5</span>
+        <span>input: [12, 12, 50, 2, 6, 22, 51, 712, 6, 3, 3]	output: 2, 3, 3, 6, 6, 12, 12, 22, 50, 51, 712</span>
+    </p>
+</header>
+<div>
+    <label for="sequence">Enter a sequence, separated by ", " (1, 2, 3, 4):</label>
+    <input type="text" name="text" id="sequence" />
+</div>
+<div>
+    <label for="check">Output: </label>
+    <input type="button" name="check" id="check" value="Check!" onclick="sortArray()" />
+</div>
+<div id="result"></div>
+<div id="navigation">
+    <a href="../07.Maximal Increasing Sequence/index.html">Previous task</a>
+    <a href="../09.Most Frequent Number/index.html">Next task</a>
+</div>
+<script type="text/javascript" src="arraySorter.js"></script>
+</body>
+</html>

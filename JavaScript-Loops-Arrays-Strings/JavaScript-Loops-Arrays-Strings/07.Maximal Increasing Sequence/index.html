@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Maximal Increasing Sequence</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<header>
+    <h1>JavaScript Loops, Arrays, Strings</h1>
+    <p>7.Write a JavaScript function findMaxSequence(arr) that finds the maximal increasing sequence in an array of
+        numbers and returns the result as an array. If there is no increasing sequence the function returns 'no'.
+        Write JS program maxSequenceFinder.js that invokes your function with the sample input data below and
+        prints the output at the console.
+    </p>
+    <p> Examples:
+        <span>input: [3, 2, 3, 4, 2, 2, 4]    output: [2, 3, 4]</span>
+        <span>input: [3, 5, 4, 6, 1, 2, 3, 6, 10, 32]	output: [1, 2, 3, 6, 10, 32]</span>
+        <span>input: [3, 2, 1]	output: no</span>
+    </p>
+</header>
+<div>
+    <label for="sequence">Enter a sequence, separated by ", " (1, 2, 3, 4):</label>
+    <input type="text" name="text" id="sequence" />
+</div>
+<div>
+    <label for="check">Output: </label>
+    <input type="button" name="check" id="check" value="Check!" onclick="findMaxSequence()" />
+</div>
+<div id="result"></div>
+<div id="navigation">
+    <a href="../06.Maximal Sequence/index.html">Previous task</a>
+    <a href="../08.Sort Array/index.html">Next task</a>
+</div>
+<script type="text/javascript" src="maxSequenceFinder.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Number Checker</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Loops, Arrays, Strings</h1>
+        <p>1.Write a JavaScript function printNumbers(number) that accepts as parameter an integer number.
+            The function finds all integer numbers from 1 to n that are not divisible by 4 or by 5.
+            Write a JS program numberChecker.js that invokes your function with the sample input data below and prints the output at the console.
+        </p>
+        <p> Examples:
+            <span>input: 20	    output: 1, 2, 3, 6, 7, 9, 11, 13, 14, 17, 18, 19</span>
+            <span>input: -5	output: no</span>
+            <span>input: 13	output: 1, 2, 3, 6, 7, 9, 11, 13</span>
+        </p>
+    </header>
+    <div>
+        <label for="number">Enter a number:</label>
+        <input type="text" name="text" id="number" />
+    </div>
+    <div>
+        <label for="check">Output: </label>
+        <input type="button" name="check" id="check" value="Check!" onclick="printNumbers()" />
+    </div>
+    <div id="result"></div>
+    <div id="navigation">
+        <a href="../16.Cards Frequencies/index.html">Previous task</a>
+        <a href="../02.Find Min and Max Number/index.html">Next task</a>
+    </div>
+    <script type="text/javascript" src="numberChecker.js"></script>
+</body>
+</html>
