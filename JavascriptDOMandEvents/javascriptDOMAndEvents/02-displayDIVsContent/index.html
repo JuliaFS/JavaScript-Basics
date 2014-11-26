@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Display DIVs Content</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript DOM & Events</h1>
+        <p>2.You are given a HTML file holding several div elements. Write a JavaScript code to print the text content of all div elements as unordered list:
+        </p>
+    </header>
+    <div>first div</div>
+    <div>second div</div>
+    <div class="empty"></div>
+    <div>third div
+        <div>inner div</div>
+    </div>
+    <ul id="result"></ul>
+    <a href="../01-LikeUnlikeButton/index.html">Previous task</a>
+    <a href="../03-hideOddRows/index.html">Next task</a>
+    <script>
+        var divs,
+                ul,
+                liItems,
+                frag,
+                item,
+                i;
+
+        divs = document.querySelectorAll('div');
+        //console.log(divs);
+        ul = document.getElementById('result');
+        liItems = [];
+        frag = document.createDocumentFragment();
+        for (i = 0; i < divs.length; i += 1) {
+            liItems[i] = document.createElement('li');
+            liItems[i].innerText = divs[i].innerText;
+            if (liItems[i].innerText !== '') {
+                frag.appendChild(liItems[i]);
+            }
+        }
+        ul.appendChild(frag);
+    </script>
+</body>
+</html>
